@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<style>
+		::placeholder{
+			color: hsl(24, 100%, 50%);
+		}
+	</style>
+	<style type="text/css">
+
+		body{
+			background: url("../static/mn1.jpg");
+			margin :0;
+			padding: 0;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+
+	.myform{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 420px;
+	padding: 40px 40px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,.5);
+		}
+
+.myform p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.myform input
+{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.myform input[type="text"],
+.myform input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:hsl(24, 100%, 50%);
+	font-size: 16px;
+}
+
+.myform input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: hsl(24, 100%, 50%);
+	cursor: pointer;
+	border-radius: 20px;
+}
+.myform input[type="submit"]:hover
+{
+	background:  rgba(227, 96, 230, 0.57);
+	color: white;
+}
+
+.myform input[type="button"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: rgba(255, 20, 141, 0.77);
+	cursor: pointer;
+	border-radius: 20px;
+}
+.myform input[type="button"]:hover
+{
+	background:  rgba(227, 96, 230, 0.57);
+	color: white;
+}
+
+
+label{
+	color: white;
+}
+
+	</style>
+</head>
+<body>
+<div id ="loginBox">
+
+
+
+	<form class="myform" action="signup" method="post">
+
+		<!-- <label><b>Full Name :</label></b><br>
+		<input type="text" name="fullname" class="inputvalues" placeholder="Type your fullname" required/><br>  -->
+
+		<label><b>Email:</label><br>
+		<input name="email" type="text" class="inputvalues" placeholder="xyz@gmail.com" required /><br><br>
+
+		<!--<label><b>Username :</label></b><br>
+		<input type="text" name="username" class="inputvalues" placeholder="Type Username" required/><br> -->
+
+		<label><b>Password :</label></b><br>
+		<input type="Password" name="password" class="inputvalues" placeholder="Type Password" required /><br><br>
+
+		<label><b>Confirm Password :</label></b><br>
+		<input type="Password" name="cpassword" class="inputvalues" placeholder="Re-enter Password" required /><br><br><br><br>
+
+	   <!--<label><b>Contact:</label><br>
+		<input name="contact" type="text" class="inputvalues" placeholder="Enter Contact" /><br> -->
+
+
+		<input type="submit" name="submit_btn" id="submit_btn" value="SIGN UP"/><br><br>
+
+	</form>
+
+
+</body>
+</html>

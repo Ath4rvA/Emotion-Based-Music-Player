@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="..\static\style.css">
+  <title>FAQ</title>
+</head>
+<body background="..\static\hp6.jpg">
+<header class="cd-header flex flex--column flex--center">
+  <div class="text-component text--center">
+  	<h1>FAQs</h1>
+    <p>👈 <a class="cd-article-link" href="/">Home Page</a></p>
+  </div>
+</header>
+
+<section class="cd-faq js-cd-faq container container--md margin-top--lg margin-bottom--lg">
+	<ul class="cd-faq__categories">
+		<li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics">Basics</a></li>
+		<li><a class="cd-faq__category truncate" href="#mobile">Technical</a></li>
+
+
+	</ul> <!-- cd-faq__categories -->
+
+	<div class="cd-faq__items">
+		<ul id="basics" class="cd-faq__group">
+			<li class="cd-faq__title"><h2 style="color:hsl(24,100%,50%);">Basics</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>How do I use the application?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>The first step is to sign up with the application. <br> In the second step use the credentials generated to login. <br> A menu will appear on successful login.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>How do I sign up?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>On the main page use the slider functionality to go right, there is an option to sign up. Just fill in the necessary information and press the sign up button. <br> You are ready to go!</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>How do I login?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>On account creation, it should redirect you to the login page. If not then head to home page and you will see a button which says Log in. On pressing the button it will ask for your credentials. Enter valid credentials and you will have successfully logged in.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Is account registration required?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Yes, account registration is required so as to help us monitor the system. Don't worry! We don't ask for much of your information. And the email and password are kept secured in our database.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>How do I contact the developers?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>On the main page you can see a button on the tool bar which says contact us. Press the button and you'll be able to see the necessary information you need to contact us!</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Is the application free to use?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Yes! The application is completely free to use.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+		</ul> <!-- cd-faq__group -->
+
+		<ul id="mobile" class="cd-faq__group">
+			<li class="cd-faq__title"><h2 style="color:hsl(24,100%,50%);">Technical</h2></li>
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>What is the purpose of this application?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>We believe that our emotions define the way we feel music which is why we have developed this application which will play songs as per your current emotion so you can get the maximum joy and feeling from the music.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Who are the target audience?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>The target audience are in general all people who resort to music to escape from the world.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>Can I get the source code of the application?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Please contact the developers to get any help regarding the application if you are a developer.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+
+			<li class="cd-faq__item">
+				<a class="cd-faq__trigger" href="#0"><span>What algorithm is used?</span></a>
+				<div class="cd-faq__content">
+          <div class="text-component">
+            <p>Unfortunately we cannot disclose such concepts.</p>
+          </div>
+				</div> <!-- cd-faq__content -->
+			</li>
+		</ul> <!-- cd-faq__group -->
+
+
+
+	<a href="#" class="cd-faq__close-panel text--replace">Close</a>
+
+  <div class="cd-faq__overlay" aria-hidden="true"></div>
+</section> <!-- cd-faq -->
+<script src="..\static\util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="..\static\main.js"></script>
+</body>
+</html>

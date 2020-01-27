@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+body {
+  background: url("../static/2.png");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: hsl(24, 100%, 50%);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand{
+  margin-right: 20px;
+}
+
+.navbar{
+  position:fixed;
+  width:100%;
+  background-color:transparent;
+  z-index:10;
+  border-radius:0;
+  border-color:transparent;
+  padding:2px;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font: bold;
+  border: white;
+  }
+
+.navbar-nav li a:hover
+{
+  color:rgba(232, 63, 195, 0.88);
+}
+
+.nav li a:hover
+{
+  color:rgba(232, 63, 195, 0.88);
+  border-bottom: 2px solid hsl(24, 100%, 50%);
+  padding:10px 0;
+}
+
+.nav li{
+  margin-right: 20px;
+}
+
+
+.btn
+{
+border: 2px solid rgba(232, 63, 195, 0.88);
+padding:10px 30px;
+background-color :rgba(232, 63, 195, 0.88);
+text-decoration:none;
+border-radius:12px;
+margin-right:15px;
+color: white;
+font: bold;
+}
+
+.btn-full:hover
+{
+background-color:rgba(175, 76, 229, 0.88);
+color:white;
+transition: all 0.5s ease-in;
+font: bold;
+}
+
+.btn-half:hover
+{
+background-color:rgba(175, 76, 229, 0.88);
+color:white;
+transition: all 0.5s ease-in;
+font: bold;
+}
+
+p{
+
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+h2{
+  color: hsl(24, 100%, 50%);
+
+}
+
+h1{
+  color: white;
+}
+
+h3{
+  color: black;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="color:white; font:bold;">CCE
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="/">Home <span class="sr-only">(current)</span></a></li>
+
+        <li><a href="FAQ">Help</a></li>
+        <li><a href="#">Team</a></li>
+                <!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Features <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          -->
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="navbar-form navbar-left" action="">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+        </div>
+        <button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
+       <ul class="nav navbar-nav navbar-right">
+
+          <a href="team.html" class="" >Team</a>
+
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<br><br><br>
+
+
+
+
+<h2 align="center">Project Team</h2>
+<h3 align="center">Hover over the avatars below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../static/Sauron_(Evil).jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Atharva Ashtaputre</h1>
+      <p>Engineer</p>
+      <p>athzizm@gmail.com</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="../static/jc2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Johnsi Chauhan </h1>
+      <p>Engineer</p>
+      <p>chauhanjohnsi@gmail.com</p>
+    </div>
+  </div>
+</div>
+<br>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>welcome</h1>
+
+        <form method="POST" enctype="multipart/form-data" id="myForm">
+        </form>
+
+        <div id="my_camera" style="width:320px; height:240px;"></div>
+        <div id="my_result"></div>
+
+        <button onclick="capture()">capture</button>
+        <form action="/searchQuery" method="POST"></form>
+        <button onclick="upload()" type="submit">upload</button>
+        <form action="/play" method="POST">
+            <button class="btn-play" type="submit" value="Play">Play</button>
+        </form>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="../static/webcam.js"></script>
+        <script>
+            Webcam.attach( '#my_camera' );
+            let uri = ''
+
+            function upload() {
+                console.log("Uploading...")
+                const image = document.getElementById('image').src;
+                const form = document.getElementById('myForm');
+                const formData = new FormData(form);
+                formData.append("file", image);
+                const xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("POST", "http://localhost:5000/searchQuery");
+                xmlhttp.send(formData);
+            }
+
+            function capture() {
+                Webcam.snap(function(data_uri) {
+                    uri = data_uri
+                    document.getElementById('my_result').innerHTML = '<img id="image" src="'+data_uri+'"/>';
+                });
+            }
+
+        </script>
+    </body>
+</html>

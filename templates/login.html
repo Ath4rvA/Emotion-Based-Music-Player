@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<style>
+		::placeholder{
+			color: hsl(24, 100%, 50%);
+		}
+	</style>
+	<style type="text/css">
+
+		body{
+			background: url("../static/hp8.jpg");
+			margin :0;
+			padding: 0;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+
+	.myform{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 220px;
+	padding: 40px 40px;
+	box-sizing: border-box;
+	background:rgba(0,0,0,.5);
+		}
+
+.myform p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #fff;
+}
+.myform input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.myform input[type="text"],
+.myform input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:hsl(24, 100%, 50%);
+	font-size: 16px;
+}
+
+.myform input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: hsl(24, 100%, 50%);
+	cursor: pointer;
+	border-radius: 20px;
+
+}
+.myform input[type="submit"]:hover
+{
+	background: rgba(227, 96, 230, 0.57);
+	color: white;
+
+}
+
+label{
+	color: white;
+}
+
+	</style>
+</head>
+<body>
+<div id ="loginBox">
+
+
+
+	<form class="myform" action="/login" method="post">
+
+		<!-- <label><b>Full Name :</label></b><br>
+		<input type="text" name="fullname" class="inputvalues" placeholder="Type your fullname" required/><br>  -->
+
+		<label><b>Username :</label></b><br>
+		<input type="text" name="username" class="inputvalues" placeholder="Type Username" required/><br>
+
+		<label><b>Password :</label></b><br>
+		<input type="Password" name="password" class="inputvalues" placeholder="Type Password" required /><br>
+
+		<br><br><br><br>
+
+		<input type="submit" name="login" id="login_btn" value="LOG IN"/><br><br>
+
+
+	</form>
+
+</body>
+</html>
