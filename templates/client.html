@@ -4,15 +4,29 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     </head>
+     <style>
+        body {
+              background-image: url('../static/hp6.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+    </style>
     <body>
-        <h1>welcome</h1>
+        <h1>EmoPlayer</h1><br>
+        <h2>Press Capture to click your photo<br>
+            Press upload to send it to us<br>
+            Press play so that you can enjoy your music<br><br><br>
+        </h2>
 
         <form method="POST" enctype="multipart/form-data" id="myForm">
         </form>
 
-        <div id="my_camera" style="width:320px; height:240px;"></div>
-        <div id="my_result"></div>
+        <div id="my_camera" style="width:320px; height:240px; margin-left: 200px;"></div>
+        <br><br><br>
+        <div id="my_result" style="margin-left: 200px;"></div>
 
         <button onclick="capture()">capture</button>
         <form action="/searchQuery" method="POST"></form>

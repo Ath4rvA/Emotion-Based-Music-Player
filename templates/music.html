@@ -2,9 +2,30 @@
 <html>
 <head>
     <title>Music</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
+<style>
+    .audio-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        background-color: black;
+    }
+    h1 {
+        color: yellow;
+    }
+    img {
+        margin-left: 750px;
+    }
+</style>
 <body>
     <h1>Emotion Predicted: {{emotion}}</h1>
+    <div class='audio-container'>
     <audio controls="controls" autoplay="autoplay" src={{mssrc}}></audio>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <img src="{{imgloc}}" alt="Predicted Emotion"> -->
 </body>
 </html>
